@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #040d1b, #090f1b, #0e101b, #11121b, #14131b);
+}
+.title{
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 60px;
+    left: 450px;
+    background-image: linear-gradient(to right top, #e51d87, #b23d9f, #784da4, #3f5196, #104d7a);
+    cursor: pointer;
+    transform: easy all 3s;
+}
+.title:hover{
+    transform: scale(1.1);
+}
+#game{
+    margin: 10px;
+    width: 800px;
+    height: 300px;
+    background-image: linear-gradient(to right top, #e51d87, #b23d9f, #784da4, #3f5196, #104d7a);
+    border: 1px solid black;
+}
+.ojo{
+    position: relative;
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right top, #e51d87, #b23d9f, #784da4, #3f5196, #104d7a);
+}
+.right{
+    left: 12px;
+}
+.left
+{   top: 4px;
+    left: 4px;
+}
+.triangulo{
+    position: relative;
+    width: 18px;
+    height: 16px;
+    background-image: linear-gradient(to right top, #e51d87, #b23d9f, #784da4, #3f5196, #104d7a);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    left: 0.8px;
+    top: 6px;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 248px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+} 
+.animate{
+    animation: jump 500ms infinite;
+}
+
+@keyframes jump{
+    0%{top:250px;}
+    30%{top:180px;}
+    70%{top:180px;}
+    100%{top:250px;}
+}
+
+#block{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/cactus2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 218px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 600px;}
+    100%{left: -10px;}
+}
