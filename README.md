@@ -4,4 +4,4 @@ Game t-rex jump,
 learning more about how to use eventListener and
 practicing javascript
 
-https://Suarez-dev.github.io/TrexGame/
+https://polyxein.github.io/TrexGame/
